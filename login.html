@@ -4,7 +4,7 @@
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <title>搜索图书</title>
+    <title>登录</title>
 
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
           integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
@@ -27,39 +27,48 @@
 
 <nav class="navbar navbar-expand-lg navbar-dark" style="background-color:#34495e">
     <a class="navbar-brand" href="#">图书管理系统</a>
+
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup"
             aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
     </button>
+
     <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
         <div class="navbar-nav">
             <a class="nav-item nav-link " href="search.html">搜索图书</a>
             <a class="nav-item nav-link " href="borrow.html">预约借阅</a>
-            <a class="nav-item nav-link active" href="history.html">历史记录</a>
+            <a class="nav-item nav-link " href="history.html">历史记录</a>
             <a class="nav-item nav-link " href="info.html">个人信息</a>
         </div>
     </div>
-    <form class="form-inline">
-        <button class="btn btn-danger my-2 my-sm-0" type="button">退出</button>
-    </form>
 </nav>
 
-<br>
 <div class="container">
-    <div class="col">
-        <table id="historyTable" class="table table-hover"></table>
-        <script>
-            //a table with sample data
-            loadSampleTable()
-        </script>
+    <br>
+    <div class="row" style="justify-content: center">
+        <div class="card" style="width: 25em;justify-content: center">
+            <div class="card-header">
+                登录
+            </div>
+            <div class="card-body">
+                <div class="row" style="justify-content: center">
+                    <img class="rounded-circle" src="images/login_icon.jpg" alt="login_icon" width="100">
+                </div>
+                <br>
+                <label class="sr-only" for="username">名称</label>
+                <input type="text" class="form-control" id="username" placeholder="用户ID">
+                <br>
+                <label class="sr-only" for="passwd">名称</label>
+                <input type="password" class="form-control" id="passwd" placeholder="密码">
+                <br>
+                <button type="button" class="btn btn-primary btn-block p-2"
+                        style="background-color: #34495e;color: white">登录
+                </button>
+            </div>
+        </div>
     </div>
 </div>
 
-<div class="container">
-    <div class="d-flex p-3 text-white">
-        <button type="button" class="btn shadow" style="background-color: #34495e;color: white">刷新</button>
-    </div>
-</div>
 
 </body>
 </html>
