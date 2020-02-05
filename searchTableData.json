@@ -1,11 +1,14 @@
-[
-  {
-    "barcode": "9787111599715",
-    "name": "计算机网络",
-    "author": "[美] James，F.Kurose，Keith，W.Ross",
-    "press": "机械工业出版社",
-    "category": "计算机类",
-    "price": "70",
-    "location": "C3"
-  }
-]
+{
+  "total": 5,
+  "rows": [
+    {
+      "barcode": "9787111599715",
+      "name": "计算机网络",
+      "author": "[美] James，F.Kurose，Keith，W.Ross",
+      "press": "机械工业出版社",
+      "category": "计算机类",
+      "price": "70",
+      "location": "C3"
+    }
+  ]
+}

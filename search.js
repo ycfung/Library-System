@@ -39,7 +39,7 @@ function loadSampleTable() {
                 title: '地点'
             },
             {
-                field: 'price',
+                field: 'action',
                 title: '操作',
                 width: 110,
                 align: 'center',
