@@ -8,7 +8,7 @@ function loadSampleTable() {
         sidePagination: "true",
         striped: true, // 是否显示行间隔色
         //search : "true",
-        uniqueId: "ID",
+        uniqueId: "barcode",
         pageSize: "10",
         pagination: true, // 是否分页
         sortable: true, // 是否启用排序

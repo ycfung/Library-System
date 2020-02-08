@@ -14,7 +14,7 @@ function loadSampleTable() {
         sortable: true, // 是否启用排序
         columns: [
             {
-                field: "id",
+                field: "ID",
                 title: "识别码"
             },
             {
