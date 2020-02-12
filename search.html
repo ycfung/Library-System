@@ -50,25 +50,28 @@
     <div class="row" style="justify-content: center">
         <div class="col-">
             <div class="row" style="justify-content: start">
-                <div class="p-2">
-                    <button class="btn btn-secondary dropdown-toggle" type="button" id="category" data-toggle="dropdown"
-                            aria-haspopup="true" aria-expanded="false">
-                        选择搜索类别
-                    </button>
-                    <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-                        <a class="dropdown-item" href="#">按书名</a>
-                        <a class="dropdown-item" href="#">按作者</a>
-                        <a class="dropdown-item" href="#">按出版社</a>
+                <div class="col-3">
+                    <div class="form-group">
+                        <label class="sr-only" for="searchBy"></label>
+                        <select id="searchBy" class="custom-select" >
+                            <option value="" selected disabled hidden>选择搜索类别</option>
+                            <option value="1">按书名</option>
+                            <option value="2">按作者</option>
+                            <option value="3">按出版社</option>
+                        </select>
+
                     </div>
                 </div>
-                <div class="p-2 col-3">
+                <div class="col-3">
                     <div class="form-group">
                         <label class="sr-only" for="name">名称</label>
                         <input type="text" class="form-control" id="name" placeholder="请输入名称">
                     </div>
                 </div>
-                <div class="p-2">
-                    <button type="button" id="search" class="btn shadow" style="background-color: #34495e;color: white">搜索</button>
+                <div>
+                    <button type="button" id="search" class="btn shadow" style="background-color: #34495e;color: white">
+                        搜索
+                    </button>
                 </div>
             </div>
             <table id="searchTable" class="table table-hover"></table>
