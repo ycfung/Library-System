@@ -7,7 +7,8 @@ function loadSampleTable() {
         toolbar: "#toolbar",
         sidePagination: "true",
         striped: true, // 是否显示行间隔色
-        //search : "true",
+        singleSelect: true,
+        clickToSelect: true,
         uniqueId: "barcode",
         pageSize: "10",
         pagination: true, // 是否分页
@@ -45,18 +46,33 @@ function loadSampleTable() {
                 align: 'center',
                 valign: 'middle',
                 formatter: actionFormatter,
+                events: operateEvents,
             },
 
         ]
     });
+
 }
+
 
 //操作栏的格式化
 function actionFormatter(value, row, index) {
     let id = value;
     let result = "";
-    result += '<button type="button" class="btn shadow" style="background-color: #34495e;color: white">预约</button>';
+    result += '<button type="button" class="reserve btn shadow" style="background-color: #34495e;color: white">预约</button>';
     return result;
+
 }
+
+
+window.operateEvents = {
+    "click .reserve": function (e, value, row, index) {
+        console.log(row.barcode);
+        console.log(row.name);
+        console.log(row.author);
+    },
+};
+
+
 
 
