@@ -67,9 +67,7 @@ function actionFormatter(value, row, index) {
 
 window.operateEvents = {
     "click .reserve": function (e, value, row, index) {
-        console.log(row.barcode);
-        console.log(row.name);
-        console.log(row.author);
+        alert(row.barcode + '\n' + row.name + '\n' + row.author);
     },
 };
 
